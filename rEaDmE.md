@@ -10,4 +10,6 @@
 * **nl_lang.json** - Dutch _(v0.1)_
 * **da_lang.json** - Danish _(v0.1)_
 
-## If you would like to add more languages or help with spelling problems be my guest!
+## If you would like to add more languages or help with spelling problems be my guest and fork this repo and make a pull request!
+
+### I'm trying to add all the languages [DeepL](https://www.deepl.com/translator) supports, but it's a bit of a pain :D
