@@ -1,6 +1,6 @@
 {
     "main_dashboard": "-",
-
+    
     "showing_your_servers": "Showing your servers",
     "showing_others_servers": "Showing others' server",
     "there_are_no_other_servers_to_display": "There are no other servers to display.",
@@ -28,15 +28,41 @@
     "startup": "Startup",
     "settings": "Settings",
 
+    "move": "Move",
+    "archive": "Archive",
+    "delete": "Delete",
+    "file": "File",
+    "rename": "Rename",
+    "unarchive": "Unarchive",
+    "directory": "Directory",
+    "download": "Download",
+    "upload": "Upload",
+    "copy": "Copy",
+    "permissions": "Permissions",
+    "delete_this": "Delete this",
+    "yes_delete": "Yes, Delete",
     "file_name": "File Name",
     "file_name_desc": "Enter the name that this file should be saved as.",
+    "deleting_files_blabla": "Deleting files is a permanent operation, you cannot undo this action.",
+    "a_valid_dir_name_must_be_provided": "A valid directory name must be provided.",
+    "create_directory": "Create Directory",
+    "enter_location_new_name_move_thing": "Enter the new name and directory of this file or folder, relative to the current directory. Use ../ to move back.",
+    "new_location_bold": "New location:",
+    "directory_name": "Directory Name",
+    "this_dir_will_be_created_as": "This directory will be created as",
     "update": "Update",
     "file_mode": "File Mode",
+    "drag_and_drop": "Drag and drop files to upload.",
     "save_content": "Save Content",
     "create_file": "Create File",
     "new_file": "New File",
     "this_directory_too_large_250": "This directory is too large to display in the browser, limiting the output to the first 250 files.",
     "this_dir_empty": "This directory seems to be empty.",
+    "delete_these_files_question": "Delete these files?",
+    "yes_delete_files": "Yes, Delete Files",
+    "are_you_sure_you_wanna_delete": "Are you sure you want to delete",
+    "files_question": "file(s)?",
+    "files_delet_permament": "Deleting the file(s) listed below is a permanent operation, you cannot undo this action.",
 
     "sftp_launch_button": "Launch SFTP",
     "sftp_details": "SFTP Details",
@@ -83,4 +109,4 @@
     "server_transferring_blabla": "This server is currently being transferred to another node and all actions are unavailable.",
     "having_trouble_connecting_to_node_sad": "We're having some trouble connecting to your server, please wait..."
 
-} 
+}
