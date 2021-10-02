@@ -1,4 +1,4 @@
-## Pterodactyl Language System (1.x.x) SOONTM
+## Pterodactyl Language System (1.x.x)
 
 * Download the latest release and add all the files into /var/www/pterodactyl (Replace files if asked)
 * Follow [this guide](https://pterodactyl.io/community/customization/panel.html) and you are done
