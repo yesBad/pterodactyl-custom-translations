@@ -1,5 +1,7 @@
-## Pterodactyl Language System (1.x.x) SOONTM
+## How to use these?
 
-* Download the latest release and add all the files into /var/www/pterodactyl (Replace files if asked)
-* Follow [this guide](https://pterodactyl.io/community/customization/panel.html) and you are done
-* You can get your custom languages [from here](https://github.com/yesBad/pterodactyl-custom-translations/tree/langs)
+* You first need to get my translation system (currently unreleased (:).
+* Download the one you want to use and add it to /var/www/pterodactyl and change the name of it to **lang.json**.
+* Follow [this guide](https://pterodactyl.io/community/customization/panel.html) and you are done!
+
+## If you would like to add more languages or help with spelling problems be my guest!
