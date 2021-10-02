@@ -7,5 +7,6 @@
 ## Current languages
 
 * **en_lang.json** - English
+* **nl_lang.json** - Dutch
 
 ## If you would like to add more languages or help with spelling problems be my guest!
