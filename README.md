@@ -1,2 +1,1 @@
-# pterodactyl-custom-translations
-Here are all the current translations for my translation system.
+If you would like to add more languages or help with spelling problems be my guest!
