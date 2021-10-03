@@ -11,6 +11,7 @@
 * **en_lang.json** - English _(v0.1)_
 * **nl_lang.json** - Dutch _(v0.1)_
 * **da_lang.json** - Danish _(v0.1)_
+* **ru_lang.json** - Russian _(v0.1)_
 
 --------------------------
 
