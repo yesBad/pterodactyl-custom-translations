@@ -1,21 +1,40 @@
 ## How to use these?
 
 * You first need to get my translation system [from here](https://github.com/yesBad/pterodactyl-custom-translations/tree/system).
-* Download the one you want to use and add it to /var/www/pterodactyl and change the name of it to **lang.json**.
+* Download the **lang.json** of the language you want and add it to /var/www/pterodactyl
 * Follow [this guide](https://pterodactyl.io/community/customization/panel.html) and you are done!
 
 --------------------------
 
 ## Current languages
 
-* **en_lang.json** - English _(v0.1)_
-* **nl_lang.json** - Dutch _(v0.1)_
-* **da_lang.json** - Danish _(v0.1)_
-* **ru_lang.json** - Russian _(v0.1)_
+* **bg** Bulgarian __(v0.2)__
+* **cs** Czech __(v0.2)__
+* **da** Danish __(v0.2)__
+* **de** German __(v0.2)__
+* **el** Greek __(v0.2)__
+* **en** English __(v0.2)__
+* **es** Spanish __(v0.2)__
+* **et** Estonian __(v0.2)__
+* **fi** Finnish __(v0.2)__
+* **fr** French __(v0.2)__
+* **hu** Hungarian __(v0.2)__
+* **it** Italian __(v0.2)__
+* **ja** Japanese __(v0.2)__
+* **lt** Lithuanian __(v0.2)__
+* **lv** Latvian __(v0.2)__
+* **nl** Dutch __(v0.2)__
+* **pl** Polish __(v0.2)__
+* **pt** Portuese __(v0.2)__
+* **ro** Romanian __(v0.2)__
+* **ru** Russian __(v0.2)__
+* **sk** Slovak __(v0.2)__
+* **sl** Slovenian __(v0.2)__
+* **sv** Swedish __(v0.2)__
+* **zh** Chinese __(v0.2)__
+
 
 --------------------------
 
 
 ## If you would like to add more languages or help with spelling problems be my guest and fork this repo and make a pull request!
-
-### I'm trying to add all the languages [DeepL](https://www.deepl.com/translator) supports, but it's a bit of a pain :D
