@@ -32,6 +32,7 @@
 * **sl** Slovenian __(v0.2)__
 * **sv** Swedish __(v0.2)__
 * **zh** Chinese __(v0.2)__
+* **id** Indonesia __(v0.2)__
 
 
 --------------------------
