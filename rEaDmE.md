@@ -38,4 +38,4 @@
 --------------------------
 
 
-## If you would like to add more languages or help with spelling problems be my guest and fork this repo and make a pull request!
+## If you would like to add more languages or help with spelling problems be my guest and fork this repo and make a pull request! Please also remember to update the README to show the language & version!
