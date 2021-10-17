@@ -1,15 +1,10 @@
 {
-    "main_dashboard": "-",
-    
     "showing_your_servers": "Showing your servers",
     "showing_others_servers": "Showing others' server",
     "there_are_no_other_servers_to_display": "There are no other servers to display.",
     "there_are_no_servers_associated_with_your_account": "There are no servers associated with your account.",
     "settings_account": "Settings",
     "apicredentials": "API Credentials",
-
-    "console_stuff": "-",
-
     "type_a_command": "Type a command...",
     "memory_usage": "Memory usage",
     "cpu_usage": "CPU usage",
@@ -17,7 +12,6 @@
     "restart": "Restart",
     "stop": "Stop",
     "kill": "Kill",
-
     "console": "Console",
     "filemanager": "File Manager",
     "databases": "Databases",
@@ -27,7 +21,9 @@
     "network": "Network",
     "startup": "Startup",
     "settings": "Settings",
-
+    "error": "Error",
+    "close": "Close",
+    "cancel": "Cancel",
     "move": "Move",
     "archive": "Archive",
     "delete": "Delete",
@@ -63,13 +59,43 @@
     "are_you_sure_you_wanna_delete": "Are you sure you want to delete",
     "files_question": "file(s)?",
     "files_delet_permament": "Deleting the file(s) listed below is a permanent operation, you cannot undo this action.",
-
     "sftp_launch_button": "Launch SFTP",
     "sftp_details": "SFTP Details",
     "sftp_server_address": "Server Address",
     "sftp_username": "Username",
     "sftp_pass_same_as_panel": "Your SFTP password is the same as the password you use to access this panel.",
-
+    "looks_like_no_dbs": "It looks like you have no databases.",
+    "dbs_cant_be_created": "Databases cannot be created for this server.",
+    "db_name_must_be_provided": "A database name must be provided.",
+    "db_name_must_be_atleast_3": "Database name must be at least 3 characters.",
+    "db_name_less_than_48": "Database name must not exceed 48 characters.",
+    "db_name_spec": "Database name should only contain alphanumeric characters, underscores, dashes, and/or periods.",
+    "db_value_must_be": "A connection value must be provided.",
+    "db_valid_conn": "A valid connection address must be provided.",
+    "create_new_db": "Create new database",
+    "db_name": "Database Name",
+    "db_desc": "A descriptive name for your database instance.",
+    "db_conn_from": "Connections From",
+    "db_conn_desc": "Where connections should be allowed from. Use % for wildcards.",
+    "create_db": "Create Database",
+    "new_db": "New Database",
+    "db_rotate_pass": "Rotate Password",
+    "delete_db": "Delete Database",
+    "confirm_db_deletion": "Confirm database deletion",
+    "delet_db_perm_action_no_undone_sad_day": "Deleting a database is a permanent action, it cannot be undone. This will permanetly delete the",
+    "confirm_db_name": "Confirm Database Name",
+    "enter_db_name_to_confirm_deletion": "Enter the database name to confirm deletion.",
+    "the_db_name_must_be_provided": "The database name must be provided.",
+    "db_conn_details": "Database connection details",
+    "endpoint": "Endpoint",
+    "connections_from": "Connections from",
+    "username": "Username",
+    "password": "Password",
+    "jdbc_conn_string": "JDBC Connection String",
+    "db_and_remove_ass_data": "database and remove all associated data.",
+    "of": "of",
+    "dbs_have_been_allocated": "databases have been allocated to this server.",
+    "!!!!!!!!!!!!!!!!!!!!!!!": "^^ remember to have small letter there at first for these three",
     "schedule_delete": "Delete schedule?",
     "schedule_yes_delete": "Yes, delete schedule",
     "schedule_are_you_sure_delete": "Are you sure you want to delete this schedule? All tasks will be removed and any running processes will be terminated.",
@@ -123,28 +149,23 @@
     "ignored_files": "Ignored Files",
     "optional_backup_schedule_desc_thing": "Optional. Include the files and folders to be excluded in this backup. By default, the contents of your .pteroignore file will be used. If you have reached your backup limit, the oldest backup will be rotated.",
     "future_tasks_will_run": "Future tasks will be run when this task fails.",
-
     "rename_server": "Change Server Name",
     "rename_server_label": "Server Name",
     "rename_server_save": "Save",
-
     "debug_information": "Debug Information",
     "d_node": "Node",
     "d_server_id": "Server ID",
-
     "settings_reinstall_server": "Reinstall Server",
     "settings_reinstall_confirm_reinstall": "Confirm server reinstallation",
     "settings_reinstall_confirm_reinstall_button": "Yes, reinstall server",
     "settings_reinstall_server_text_confirmation_text": "Your server will be stopped and some files may be deleted or modified during this process, are you sure you wish to continue?",
     "settings_reinstall_server_text": "Reinstalling your server will stop it, and then re-run the installation script that initially set it up.",
     "settings_reinstall_server_text_bold": "Some files may be deleted or modified during this process, please back up your data before continuing.",
-
     "variables": "Variables",
     "docker_image": "Docker Image",
     "docker_image_text": "This is an advanced feature allowing you to select a Docker image to use when running this server instance.",
     "docker_image_text_admin_disabled": "This server's Docker image has been manually set by an administrator and cannot be changed through this UI.",
     "startup_command": "Startup Command",
-
     "connecting": "Connecting...",
     "installing": "Installing",
     "running_installer": "Running Installer",
@@ -154,13 +175,9 @@
     "server_suspended": "Server Suspended",
     "suspended_msg": "This server is suspended and cannot be accessed.",
     "suspended": "Suspended",
-
     "unlimited": "Unlimited",
-
     "server_offline": "Server is offline.",
-
     "server_installing_blabla": "This server is currently running its installation process and most actions are unavailable.",
     "server_transferring_blabla": "This server is currently being transferred to another node and all actions are unavailable.",
     "having_trouble_connecting_to_node_sad": "We're having some trouble connecting to your server, please wait..."
-
 }
