@@ -33,7 +33,7 @@
 * **sv** Swedish __(v0.2)__
 * **zh** Chinese __(v0.2)__
 * **id** Indonesia __(v0.2)__
-
+* **no** Norwegian __(v0.2)__
 
 --------------------------
 
