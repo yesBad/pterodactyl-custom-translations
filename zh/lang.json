@@ -153,7 +153,7 @@
     "rename_server_label": "服务器实例名称",
     "rename_server_save": "保存",
     "debug_information": "DEBUG 信息",
-    "d_node": "信息",
+    "d_node": "节点服务器",
     "d_server_id": "服务器 ID",
     "settings_reinstall_server": "重新安装服务器",
     "settings_reinstall_confirm_reinstall": "确认重新安装服务器",
