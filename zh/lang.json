@@ -141,7 +141,7 @@
     "later": "后",
     "time_offset": "时间偏移（秒）。",
     "time_offset_desc": "上一个任务执行后在运行此任务之前等待的时间。 如果这是计划中的第一个任务，则不会应用该任务。",
-    "payload": "有效载荷",
+    "payload": "执行的指令",
     "start_the_server": "启动此服务器",
     "restart_the_server": "重启此服务器",
     "stop_the_server": "关闭此服务器",
