@@ -23,7 +23,7 @@
 * **ja** Japanese __(v0.2)__
 * **lt** Lithuanian __(v0.2)__
 * **lv** Latvian __(v0.2)__
-* **nl** Dutch __(v0.2)__
+* **nl** Dutch __(v0.25)__
 * **pl** Polish __(v0.2)__
 * **pt** Portuguese __(v0.2)__
 * **pt-br** Brazilian Portuguese __(v0.2)__
