@@ -64,6 +64,13 @@
     "sftp_server_address": "Server Address",
     "sftp_username": "Username",
     "sftp_pass_same_as_panel": "Your SFTP password is the same as the password you use to access this panel.",
+    "a_valid_email_must_be_provided": "A valid email address must be provided to continue.",
+    "request_pass_reset": "Request Password Reset",
+    "email": "Email",
+    "enter_account_email": "Enter your account email address to receive instructions on resetting your password.",
+    "send_email": "Send Email",
+    "return_to_login": "Return to Login",
+    "device_checkpoint": "Device Checkpoint",
     "looks_like_no_dbs": "It looks like you have no databases.",
     "dbs_cant_be_created": "Databases cannot be created for this server.",
     "db_name_must_be_provided": "A database name must be provided.",
@@ -179,5 +186,11 @@
     "server_offline": "Server is offline.",
     "server_installing_blabla": "This server is currently running its installation process and most actions are unavailable.",
     "server_transferring_blabla": "This server is currently being transferred to another node and all actions are unavailable.",
-    "having_trouble_connecting_to_node_sad": "We're having some trouble connecting to your server, please wait..."
+    "having_trouble_connecting_to_node_sad": "We're having some trouble connecting to your server, please wait...",
+    "login": "Login",
+    "forgot_password": "Forgot password?",
+    "pls_give_username": "A username or email must be provided.",
+    "pls_enter_pass": "Please enter your account password.",
+    "login_to_continue": "Login to Continue",
+    "username_or_email": "Username or Email"
 }
