@@ -28,7 +28,7 @@
 * **pt** Portuguese __(v0.2)__
 * **pt-br** Brazilian Portuguese __(v0.2)__
 * **ro** Romanian __(v0.2)__
-* **ru** Russian __(v0.25)__
+* **ru** Russian __(v0.3)__
 * **sk** Slovak __(v0.2)__
 * **sl** Slovenian __(v0.2)__
 * **sv** Swedish __(v0.2)__
