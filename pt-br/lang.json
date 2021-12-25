@@ -179,5 +179,18 @@
     "server_offline": "O servidor está desligado.",
     "server_installing_blabla": "Este servidor está em processo de instalação. Espere o término para poder executar qualquer ação.",
     "server_transferring_blabla": "Este servidor está em processo de transferência para outro node. Espere o término para poder executar qualquer ação.",
-    "having_trouble_connecting_to_node_sad": "Nós estamos tendo alguns problemas para conectar o seu servidor, por favor aguarde..."
+    "having_trouble_connecting_to_node_sad": "Nós estamos tendo alguns problemas para conectar o seu servidor, por favor aguarde...",
+    "a_valid_email_must_be_provided": "O seu e-mail deve ser válido.",
+    "request_pass_reset": "Esqueci Minha Senha",
+    "email": "E-mail",
+    "enter_account_email": "Ponha o seu E-mail para receber as instruções para resetar a sua senha.",
+    "send_email": "Enviar E-mail",
+    "return_to_login": "Voltar ao Login",
+    "device_checkpoint": "Checkpoint do Dispositivo",
+    "login": "Login",
+    "forgot_password": "Esqueceu Sua Senha?",
+    "pls_give_username": "O usuário/e-mail deve ser válido.",
+    "pls_enter_pass": "Por favor ponha a sua senha.",
+    "login_to_continue": "Faça Login para Continuar",
+    "username_or_email": "Usuário ou E-mail"
 }
