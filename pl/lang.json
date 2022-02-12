@@ -9,7 +9,7 @@
   "memory_usage": "Wykorzystanie pamięci",
   "cpu_usage": "Użycie CPU",
   "start": "Start",
-  "restart": "Uruchom ponownie stronę",
+  "restart": "Uruchom ponownie",
   "stop": "Przestań",
   "kill": "Kill",
   "console": "Konsola",
