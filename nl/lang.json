@@ -62,7 +62,14 @@
   "sftp_details": "SFTP Details",
   "sftp_server_address": "Server Adres",
   "sftp_username": "Gebruikersnaam",
-  "sftp_pass_same_as_panel": "Uw SFTP wachtwoord is hetzelfde als het wachtwoord dat u gebruikt om toegang te krijgen tot dit paneel.",
+  "sftp_pass_same_as_panel": "Uw SFTP wachtwoord is hetzelfde als het wachtwoord dat u gebruikt om toegang te krijgen tot dit paneel.", 
+  "a_valid_email_must_be_provided": "Een geldig e-mailadres moet worden opgegeven om verder te gaan.",
+  "request_pass_reset": "Wachtwoordherstel aanvragen",
+  "email": "Email",
+  "enter_account_email": "Voer het e-mailadres van uw account in om instructies te ontvangen voor het resetten van uw wachtwoord.",
+  "send_email": "verstuur Email",
+  "return_to_login": "Terug naar aanmelden",
+  "device_checkpoint": "Apparaat Controlepunt",
   "looks_like_no_dbs": "Het lijkt erop dat je geen databases hebt.",
   "dbs_cant_be_created": "Voor deze server kunnen geen databases worden aangemaakt.",
   "db_name_must_be_provided": "Er moet een databasenaam worden opgegeven.",
@@ -178,5 +185,11 @@
   "server_offline": "Server is offline.",
   "server_installing_blabla": "Deze server is momenteel bezig met zijn installatieproces en de meeste acties zijn niet beschikbaar.",
   "server_transferring_blabla": "Deze server wordt momenteel overgeplaatst naar een ander knooppunt en alle acties zijn niet beschikbaar.",
-  "having_trouble_connecting_to_node_sad": "We hebben problemen om verbinding te maken met uw server, wacht alstublieft..."
+  "having_trouble_connecting_to_node_sad": "We hebben problemen om verbinding te maken met uw server, wacht alstublieft...",
+  "login": "Inloggen",
+  "forgot_password": "Wachtwoord vergeten?",
+  "pls_give_username": "Er moet een gebruikersnaam of e-mailadres worden opgegeven.",
+  "pls_enter_pass": "Voer alstublieft het wachtwoord van uw account in.",
+  "login_to_continue": "Log in om door te gaan",
+  "username_or_email": "Gebruikersnaam of e-mail"
 }
