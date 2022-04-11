@@ -1,9 +1,9 @@
 {
   "main_dashboard": "-",
-  "showing_your_servers": "Sinun plvelimet",
-  "showing_others_servers": "Muiden palvelimet",
+  "showing_your_servers": "Näytetään sinun palvelimet",
+  "showing_others_servers": "Näytetään muiden palvelimet",
   "there_are_no_other_servers_to_display": "Muita palvelimia ei ole.",
-  "there_are_no_servers_associated_with_your_account": "Tiliisi ei ole yhtään palvelinta",
+  "there_are_no_servers_associated_with_your_account": "Tililläsi ei ole yhtään palvelinta",
   "settings_account": "Asetukset",
   "apicredentials": "API-tunnukset",
   "console_stuff": "-",
