@@ -19,7 +19,6 @@ import { ServerContext } from '@/state/server';
 import ErrorBoundary from '@/components/elements/ErrorBoundary';
 import { encodePathSegments, hashToPath } from '@/helpers';
 import { dirname } from 'path';
-import lang from '../../../../../lang.json';
 
 const LazyCodemirrorEditor = lazy(() => import(/* webpackChunkName: "editor" */'@/components/elements/CodemirrorEditor'));
 
@@ -147,13 +146,13 @@ export default () => {
                 {action === 'edit' ?
                     <Can action={'file.update'}>
                         <Button css={tw`flex-1 sm:flex-none`} onClick={() => save()}>
-                            {lang.save_content}
+                            Save Content
                         </Button>
                     </Can>
                     :
                     <Can action={'file.create'}>
                         <Button css={tw`flex-1 sm:flex-none`} onClick={() => setModalVisible(true)}>
-                            {lang.create_file}
+                            Create File
                         </Button>
                     </Can>
                 }

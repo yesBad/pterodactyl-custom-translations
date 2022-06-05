@@ -63,7 +63,7 @@ export default ({ match, location }: RouteComponentProps<{ token: string }>) => 
         >
             {({ isSubmitting }) => (
                 <LoginFormContainer
-                    title={'Reset Password'}
+                    title={lang.reset_password}
                     css={tw`w-full flex`}
                 >
                     <div>
@@ -73,16 +73,16 @@ export default ({ match, location }: RouteComponentProps<{ token: string }>) => 
                     <div css={tw`mt-6`}>
                         <Field
                             light
-                            label={'New Password'}
+                            label={lang.new_password}
                             name={'password'}
                             type={'password'}
-                            description={'Passwords must be at least 8 characters in length.'}
+                            description={lang.password_somethingsomething_safesafe}
                         />
                     </div>
                     <div css={tw`mt-6`}>
                         <Field
                             light
-                            label={'Confirm New Password'}
+                            label={lang.confirm_new_pass}
                             name={'passwordConfirmation'}
                             type={'password'}
                         />
@@ -94,7 +94,7 @@ export default ({ match, location }: RouteComponentProps<{ token: string }>) => 
                             disabled={isSubmitting}
                             isLoading={isSubmitting}
                         >
-                            Reset Password
+                            {lang.reset_password}
                         </Button>
                     </div>
                     <div css={tw`mt-6 text-center`}>
@@ -102,7 +102,7 @@ export default ({ match, location }: RouteComponentProps<{ token: string }>) => 
                             to={'/auth/login'}
                             css={tw`text-xs text-neutral-500 tracking-wide no-underline uppercase hover:text-neutral-600`}
                         >
-                            Return to Login
+                            {lang.return_to_fuckery}
                         </Link>
                     </div>
                 </LoginFormContainer>

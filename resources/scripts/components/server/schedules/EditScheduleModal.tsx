@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Schedule } from '@/api/server/schedules/getServerSchedules';
 import Field from '@/components/elements/Field';
 import { Form, Formik, FormikHelpers } from 'formik';
@@ -12,6 +12,8 @@ import tw from 'twin.macro';
 import Button from '@/components/elements/Button';
 import ModalContext from '@/context/ModalContext';
 import asModal from '@/hoc/asModal';
+import Switch from '@/components/elements/Switch';
+import ScheduleCheatsheetCards from '@/components/server/schedules/ScheduleCheatsheetCards';
 import lang from '../../../../../lang.json';
 
 interface Props {
@@ -35,6 +37,7 @@ const EditScheduleModal = ({ schedule }: Props) => {
 
     const uuid = ServerContext.useStoreState(state => state.server.data!.uuid);
     const appendSchedule = ServerContext.useStoreActions(actions => actions.schedules.appendSchedule);
+    const [ showCheatsheet, setShowCheetsheet ] = useState(false);
 
     useEffect(() => {
         return () => {
@@ -103,6 +106,20 @@ const EditScheduleModal = ({ schedule }: Props) => {
                     <p css={tw`text-neutral-400 text-xs mt-2`}>
                         {lang.the_schedule_system_stuff_blabla_no_one_fucking_cares}
                     </p>
+                    <div css={tw`mt-6 bg-neutral-700 border border-neutral-800 shadow-inner p-4 rounded`}>
+                        <Switch
+                            name={'show_cheatsheet'}
+                            description={'Show the cron cheatsheet for some examples.'}
+                            label={'Show Cheatsheet'}
+                            defaultChecked={showCheatsheet}
+                            onChange={() => setShowCheetsheet(s => !s)}
+                        />
+                        {showCheatsheet &&
+                            <div css={tw`block md:flex w-full`}>
+                                <ScheduleCheatsheetCards/>
+                            </div>
+                        }
+                    </div>
                     <div css={tw`mt-6 bg-neutral-700 border border-neutral-800 shadow-inner p-4 rounded`}>
                         <FormikSwitch
                             name={'onlyWhenOnline'}

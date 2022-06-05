@@ -7,7 +7,6 @@ import { ServerContext } from '@/state/server';
 import { join } from 'path';
 import tw from 'twin.macro';
 import Button from '@/components/elements/Button';
-import lang from '../../../../../lang.json';
 
 type Props = RequiredModalProps & {
     onFileNamed: (name: string) => void;
@@ -45,12 +44,12 @@ export default ({ onFileNamed, onDismissed, ...props }: Props) => {
                         <Field
                             id={'fileName'}
                             name={'fileName'}
-                            label={lang.file_name}
-                            description={lang.file_name_desc}
+                            label={'File Name'}
+                            description={'Enter the name that this file should be saved as.'}
                             autoFocus
                         />
                         <div css={tw`mt-6 text-right`}>
-                            <Button>{lang.create_file}</Button>
+                            <Button>Create File</Button>
                         </div>
                     </Form>
                 </Modal>

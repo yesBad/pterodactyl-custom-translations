@@ -22,10 +22,8 @@ const schema = object().shape({
         .required(lang.db_name_must_be_provided)
         .min(3, lang.db_name_must_be_atleast_3)
         .max(48, lang.db_name_less_than_48)
-        .matches(/^[A-Za-z0-9_\-.]{3,48}$/, lang.db_name_spec),
-    connectionsFrom: string()
-        .required(lang.db_value_must_be)
-        .matches(/^([0-9]{1,3}|%)(\.([0-9]{1,3}|%))?(\.([0-9]{1,3}|%))?(\.([0-9]{1,3}|%))?$/, lang.db_valid_conn),
+        .matches(/^[\w\-.]{3,48}$/, lang.db_name_spec),
+    connectionsFrom: string().matches(/^[\w\-/.%:]+$/, lang.db_valid_conn),
 });
 
 export default () => {
@@ -37,7 +35,10 @@ export default () => {
 
     const submit = (values: Values, { setSubmitting }: FormikHelpers<Values>) => {
         clearFlashes('database:create');
-        createServerDatabase(uuid, { ...values })
+        createServerDatabase(uuid, {
+            databaseName: values.databaseName,
+            connectionsFrom: values.connectionsFrom || '%',
+        })
             .then(database => {
                 appendDatabase(database);
                 setVisible(false);
@@ -52,7 +53,7 @@ export default () => {
         <>
             <Formik
                 onSubmit={submit}
-                initialValues={{ databaseName: '', connectionsFrom: '%' }}
+                initialValues={{ databaseName: '', connectionsFrom: '' }}
                 validationSchema={schema}
             >
                 {

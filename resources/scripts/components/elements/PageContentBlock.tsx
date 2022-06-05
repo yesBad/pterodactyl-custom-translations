@@ -37,7 +37,16 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
                         >
                             Pterodactyl Software
                         </a>
-                        <p css={tw`text-center text-neutral-500 text-xs`}>Language System by Bad#3260</p>
+                        <p css={tw`text-center text-neutral-500 text-xs`}>Language System by&nbsp;
+                            <a
+                                rel={'noopener nofollow noreferrer'}
+                                href={'https://github.com/yesBad/pterodactyl-custom-translations'}
+                                target={'_blank'}
+                                css={tw`no-underline text-neutral-500 hover:text-neutral-300`}
+                            >
+                                Bad#3260
+                            </a>
+                        </p>
                     </p>
                 </ContentContainer>
             </>

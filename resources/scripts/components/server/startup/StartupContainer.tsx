@@ -30,11 +30,11 @@ const StartupContainer = () => {
 
     const { data, error, isValidating, mutate } = getServerStartup(uuid, {
         ...variables,
-        dockerImages: [ variables.dockerImage ],
+        dockerImages: { [variables.dockerImage]: variables.dockerImage },
     });
 
     const setServerFromState = ServerContext.useStoreActions(actions => actions.server.setServerFromState);
-    const isCustomImage = data && !data.dockerImages.map(v => v.toLowerCase()).includes(variables.dockerImage.toLowerCase());
+    const isCustomImage = data && !Object.values(data.dockerImages).map(v => v.toLowerCase()).includes(variables.dockerImage.toLowerCase());
 
     useEffect(() => {
         // Since we're passing in initial data this will not trigger on mount automatically. We
@@ -88,21 +88,24 @@ const StartupContainer = () => {
                         </div>
                     </TitledGreyBox>
                     <TitledGreyBox title={lang.docker_image} css={tw`flex-1 lg:flex-none lg:w-1/3 mt-8 md:mt-0 md:ml-10`}>
-                        {data.dockerImages.length > 1 && !isCustomImage ?
+                        {Object.keys(data.dockerImages).length > 1 && !isCustomImage ?
                             <>
                                 <InputSpinner visible={loading}>
                                     <Select
-                                        disabled={data.dockerImages.length < 2}
+                                        disabled={(Object.keys(data.dockerImages)).length < 2}
                                         onChange={updateSelectedDockerImage}
                                         defaultValue={variables.dockerImage}
                                     >
-                                        {data.dockerImages.map(image => (
-                                            <option key={image} value={image}>{image}</option>
+                                        {Object.keys(data.dockerImages).map(key => (
+                                            <option key={data.dockerImages[key]} value={data.dockerImages[key]}>
+                                                {key}
+                                            </option>
                                         ))}
                                     </Select>
                                 </InputSpinner>
                                 <p css={tw`text-xs text-neutral-300 mt-2`}>
-                                    {lang.docker_image_text}
+                                    This is an advanced feature allowing you to select a Docker image to use when
+                                    running this server instance.
                                 </p>
                             </>
                             :
@@ -110,7 +113,8 @@ const StartupContainer = () => {
                                 <Input disabled readOnly value={variables.dockerImage}/>
                                 {isCustomImage &&
                                 <p css={tw`text-xs text-neutral-300 mt-2`}>
-                                    {lang.docker_image_text_admin_disabled}
+                                    This {'server\'s'} Docker image has been manually set by an administrator and cannot
+                                    be changed through this UI.
                                 </p>
                                 }
                             </>

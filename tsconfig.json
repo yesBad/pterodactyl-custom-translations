@@ -10,7 +10,7 @@
     ],
     "strict": true,
     "noEmit": true,
-	"resolveJsonModule": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
@@ -22,6 +22,9 @@
     "paths": {
       "@/*": [
         "./resources/scripts/*"
+      ],
+      "@definitions/*": [
+        "./resources/scripts/api/definitions/*"
       ],
       "@feature/*": [
         "./resources/scripts/components/server/features/*"

@@ -1,21 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import tw, { TwStyle } from 'twin.macro';
-import { faCircle, faEthernet, faHdd, faMemory, faMicrochip, faServer } from '@fortawesome/free-solid-svg-icons';
+import {
+    faArrowCircleDown,
+    faArrowCircleUp,
+    faCircle,
+    faEthernet,
+    faHdd,
+    faMemory,
+    faMicrochip,
+    faServer,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { bytesToHuman, megabytesToHuman } from '@/helpers';
+import { bytesToHuman, formatIp, megabytesToHuman } from '@/helpers';
 import TitledGreyBox from '@/components/elements/TitledGreyBox';
 import { ServerContext } from '@/state/server';
 import CopyOnClick from '@/components/elements/CopyOnClick';
 import { SocketEvent, SocketRequest } from '@/components/server/events';
+import UptimeDuration from '@/components/server/UptimeDuration';
 import lang from '../../../../lang.json';
 
-interface Stats {
-    memory: number;
-    cpu: number;
-    disk: number;
-}
+type Stats = Record<'memory' | 'cpu' | 'disk' | 'uptime' | 'rx' | 'tx', number>;
 
-function statusToColor (status: string|null, installing: boolean): TwStyle {
+function statusToColor (status: string | null, installing: boolean): TwStyle {
     if (installing) {
         status = '';
     }
@@ -31,9 +37,21 @@ function statusToColor (status: string|null, installing: boolean): TwStyle {
 }
 
 const ServerDetailsBlock = () => {
-    const [ stats, setStats ] = useState<Stats>({ memory: 0, cpu: 0, disk: 0 });
+    const [ stats, setStats ] = useState<Stats>({ memory: 0, cpu: 0, disk: 0, uptime: 0, tx: 0, rx: 0 });
 
     const status = ServerContext.useStoreState(state => state.status.value);
+    const statusfix = ServerContext.useStoreState(state => {
+        const statsit = state.status.value;
+        switch (statsit) {
+            case 'offline':
+                return lang.offline;
+            case 'running':
+                return lang.running;
+            default:
+                return lang.starting;
+        }
+    }
+    );
     const connected = ServerContext.useStoreState(state => state.socket.connected);
     const instance = ServerContext.useStoreState(state => state.socket.instance);
 
@@ -49,6 +67,9 @@ const ServerDetailsBlock = () => {
             memory: stats.memory_bytes,
             cpu: stats.cpu_absolute,
             disk: stats.disk_bytes,
+            tx: stats.network.tx_bytes,
+            rx: stats.network.rx_bytes,
+            uptime: stats.uptime || 0,
         });
     };
 
@@ -70,7 +91,7 @@ const ServerDetailsBlock = () => {
     const isTransferring = ServerContext.useStoreState(state => state.server.data!.isTransferring);
     const limits = ServerContext.useStoreState(state => state.server.data!.limits);
     const primaryAllocation = ServerContext.useStoreState(state => state.server.data!.allocations.filter(alloc => alloc.isDefault).map(
-        allocation => (allocation.alias || allocation.ip) + ':' + allocation.port
+        allocation => (allocation.alias || formatIp(allocation.ip)) + ':' + allocation.port,
     )).toString();
 
     const diskLimit = limits.disk ? megabytesToHuman(limits.disk) : lang.unlimited;
@@ -88,7 +109,12 @@ const ServerDetailsBlock = () => {
                         statusToColor(status, isInstalling || isTransferring),
                     ]}
                 />
-                &nbsp;{!status ? lang.connecting : (isInstalling ? lang.installing : (isTransferring) ? lang.transferring : status)}
+                &nbsp;{!status ? lang.connecting : (isInstalling ? lang.installing : (isTransferring) ? lang.transferring : statusfix)}
+                {stats.uptime > 0 &&
+                <span css={tw`ml-2 lowercase`}>
+                    (<UptimeDuration uptime={stats.uptime / 1000}/>)
+                </span>
+                }
             </p>
             <CopyOnClick text={primaryAllocation}>
                 <p css={tw`text-xs mt-2`}>
@@ -107,6 +133,11 @@ const ServerDetailsBlock = () => {
             <p css={tw`text-xs mt-2`}>
                 <FontAwesomeIcon icon={faHdd} fixedWidth css={tw`mr-1`}/>&nbsp;{bytesToHuman(stats.disk)}
                 <span css={tw`text-neutral-500`}> / {diskLimit}</span>
+            </p>
+            <p css={tw`text-xs mt-2`}>
+                <FontAwesomeIcon icon={faEthernet} fixedWidth css={tw`mr-1`}/>
+                <FontAwesomeIcon icon={faArrowCircleUp} fixedWidth css={tw`mr-1`}/>{bytesToHuman(stats.tx)}
+                <FontAwesomeIcon icon={faArrowCircleDown} fixedWidth css={tw`mx-1`}/>{bytesToHuman(stats.rx)}
             </p>
         </TitledGreyBox>
     );
