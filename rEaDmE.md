@@ -8,31 +8,31 @@
 
 ## Current languages
 
-* **bg** Bulgarian __(v0.2)__
-* **cs** Czech __(v0.2)__
-* **da** Danish __(v0.2)__
-* **de** German __(v0.25)__
-* **el** Greek __(v0.2)__
-* **en** English __(v0.3)__
-* **es** Spanish __(v0.3)__
-* **et** Estonian __(v0.2)__
-* **fi** Finnish __(v0.2)__
-* **fr** French __(v0.2)__
-* **hu** Hungarian __(v0.2)__
-* **it** Italian __(v0.2)__
-* **ja** Japanese __(v0.2)__
-* **lt** Lithuanian __(v0.2)__
-* **lv** Latvian __(v0.2)__
-* **nl** Dutch __(v0.3)__
-* **pl** Polish __(v0.3)__
-* **pt** Portuguese __(v0.2)__
-* **pt-br** Brazilian Portuguese __(v0.3)__
-* **ro** Romanian __(v0.2)__
-* **ru** Russian __(v0.3)__
-* **sk** Slovak __(v0.2)__
-* **sl** Slovenian __(v0.2)__
-* **sv** Swedish __(v0.2)__
-* **zh** Chinese __(v0.3)__
+* **bg** Bulgarian __(v0.4)__
+* **cs** Czech __(v0.4)__
+* **da** Danish __(v0.4)__
+* **de** German __(v0.4)__
+* **el** Greek __(v0.4)__
+* **en** English __(v0.4)__
+* **es** Spanish __(v0.4)__
+* **et** Estonian __(v0.4)__
+* **fi** Finnish __(v0.4)__
+* **fr** French __(v0.4)__
+* **hu** Hungarian __(v0.4)__
+* **it** Italian __(v0.4)__
+* **ja** Japanese __(v0.4)__
+* **lt** Lithuanian __(v0.4)__
+* **lv** Latvian __(v0.4)__
+* **nl** Dutch __(v0.4)__
+* **pl** Polish __(v0.4)__
+* **pt** Portuguese __(v0.4)__
+* **pt-br** Brazilian Portuguese __(v0.4)__
+* **ro** Romanian __(v0.4)__
+* **ru** Russian __(v0.4)__
+* **sk** Slovak __(v0.4)__
+* **sl** Slovenian __(v0.4)__
+* **sv** Swedish __(v0.4)__
+* **zh** Chinese __(v0.4)__
 * **id** Indonesia __(v0.2)__
 * **no** Norwegian __(v0.2)__
 
