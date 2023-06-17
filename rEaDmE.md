@@ -1,3 +1,5 @@
+Archived as no motivation nor time.
+
 ## Pterodactyl Language System (1.x.x)
 
 * Download the release you need ([check lang version](https://github.com/yesBad/pterodactyl-custom-translations/tree/langs)), unzip and add all the files into /var/www/pterodactyl (Replace files!)
